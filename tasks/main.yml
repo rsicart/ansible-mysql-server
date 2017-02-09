@@ -3,8 +3,8 @@
 - name: Install Mysql server
   apt: name={{ item }} state=latest
   with_items:
-    - mysql-server
-    - mysql-client
+    - mariadb-server
+    - mariadb-client
     - python-mysqldb
 
 - name: Ensure mysql is running and starts on boot
